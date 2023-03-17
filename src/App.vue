@@ -18,9 +18,7 @@ const side = useSideMenuMy();
     <div id="main-content" :class="side.side ? '' : 'lg:ml-64'" class="relative w-full h-full overflow-y-auto bg-gray-50 dark:bg-gray-900">
       <main>
         <div class="px-4 pt-6">
-          <div class="grid gap-4 xl:grid-cols-2 2xl:grid-cols-3">
-            <router-view></router-view>
-          </div>
+          <router-view></router-view>
         </div>
       </main>
       <Footer />
