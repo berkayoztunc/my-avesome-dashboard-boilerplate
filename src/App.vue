@@ -9,7 +9,7 @@ const side = useSideMenuMy();
 </script>
 
 <template>
-  <NavMenu class="container" />
+  <NavMenu class="container-md" />
   <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
     <SideMenu />
 
