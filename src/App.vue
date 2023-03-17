@@ -10,7 +10,7 @@ const side = useSideMenuMy();
 
 <template>
   <NavMenu class="container-md" />
-  <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
+  <div class="flex overflow-hidden bg-gray-50 dark:bg-gray-900">
     <SideMenu />
 
     <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
