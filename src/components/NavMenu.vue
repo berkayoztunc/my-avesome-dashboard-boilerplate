@@ -1,5 +1,6 @@
 <script setup>
 import { useSideMenuMy } from '../stores/counter';
+import Web3Button from '../components/Web3Button.vue';
 
 import { useDark, useToggle } from '@vueuse/core';
 
@@ -13,8 +14,8 @@ const toggleDark = useToggle(isDark);
       <div class="flex items-center justify-between">
         <div class="flex items-center justify-start">
           <button @click="side.update()" id="toggleSidebarMobile" aria-expanded="true" aria-controls="sidebar" class="">
-            <i class="bx bx-toggle-left bx-lg" v-if="side.side"></i>
-            <i class="bx bx-toggle-right bx-lg text-green-300" v-else></i>
+            <i class="bx bx-toggle-left bx-lg transition duration-300" v-if="side.side"></i>
+            <i class="bx bx-toggle-right bx-lg text-green-300 transition duration-300" v-else></i>
           </button>
           <a href="https://vitruvians.tools/" class="flex ml-2 md:mr-24">
             <img src="https://vitruvians.tools/logo/Analogo-koyuzeminde.png" class="h-8 mr-3" />
@@ -26,6 +27,7 @@ const toggleDark = useToggle(isDark);
             <i class="bx bxs-sun" v-if="isDark"></i>
             <i class="bx bxs-moon" v-else></i>
           </button>
+          <Web3Button></Web3Button>
         </div>
       </div>
     </div>

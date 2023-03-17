@@ -15,7 +15,7 @@ const side = useSideMenuMy();
 
     <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
 
-    <div id="main-content" :class="side.side ? '' : 'lg:ml-64'" class="relative w-full h-full overflow-y-auto bg-gray-50 dark:bg-gray-900">
+    <div id="main-content" :class="side.side ? '' : 'lg:ml-64'" class="transition duration-300 relative w-full h-full overflow-y-auto bg-gray-50 dark:bg-gray-900">
       <main>
         <div class="px-4 pt-6">
           <router-view></router-view>
